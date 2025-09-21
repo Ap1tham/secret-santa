@@ -1,0 +1,9 @@
+Bonsoir {{giver_name}},
+
+Tu as le privilège d'être cette année le Secret Santa de {{recipient_name}} 🎁 !
+
+Pour cette édition, on va changer un peu d’ambiance : vu que mon stand-up a floppé l’année dernière, on va voir si faire rire c'est vraiment si facile que ça avec un concours de jokes de papa ! On va former deux équipes le jour J au hasard. L’équipe perdante aura bien évidemment un gage, sinon c’est pas drôle !
+
+PS : Le budget pour le cadeau est de 20 €, donc essaie de pas exploser la banque.
+
+— Votre joyeux Organisateur

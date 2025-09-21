@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset global pour mail clients */
+    body,
+    table,
+    td,
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      border: 0;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
+
+    table {
+      border-collapse: collapse !important;
+    }
+
+    /* Corps et background */
+    body {
+      width: 100% !important;
+      height: 100% !important;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .email-container {
+      width: 100%;
+      background-image: url('https://images.pexels.com/photos/1303082/pexels-photo-1303082.jpeg?cs=srgb&dl=pexels-george-dolgikh-551816-1303082.jpg&fm=jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 40px 10px;
+      /* espace autour du contenu pour petits écrans */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 30px 20px;
+      border-radius: 8px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #d32f2f;
+    }
+
+    p {
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin: 20px 0;
+    }
+
+    /* Responsive : texte et padding réduits sur petits écrans */
+    @media only screen and (max-width: 480px) {
+      .content {
+        padding: 20px 10px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <table role="presentation" class="email-container" width="100%">
+    <tr>
+      <td align="center" valign="top">
+        <div class="content">
+          <p>Bonsoir {{giver_name}},</p>
+          <p>Tu as le privilège d'être cette année le Secret Santa de <span class="highlight">{{recipient_name}}</span>
+            🎁 !</p>
+          <p>Pour cette édition, on va changer un peu d’ambiance : vu que mon stand-up a floppé l’année dernière, on va
+            voir si faire rire c'est vraiment si facile que ça avec un concours de jokes de papa ! On va former deux
+            équipes le jour J au hasard. L’équipe perdante aura bien évidemment un gage, sinon c’est pas drôle !</p>
+          <p>PS : Le budget pour le cadeau est de 20 €, donc essaie de pas exploser la banque.</p>
+          <hr>
+          <p>— Votre joyeux Organisateur</p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

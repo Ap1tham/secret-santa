@@ -1,0 +1,7 @@
+subject: "Secret Santa 2025 🎁"
+from_name: "Secret Santa Organizer"
+reply_to: "organizer@gmail.com"
+test_mode: false         # true = preview only, no sending
+number_max_mail_send: 10
+max_sends_per_minute: 30
+allow_self_assignment: false
