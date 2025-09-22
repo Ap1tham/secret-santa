@@ -1,6 +1,6 @@
 import yaml
 import logging
-from utils import load_env, load_participants, save_preview
+from utils import load_env, load_participants, save_preview, load_history
 from arranger import make_pairs
 from renderer import render_email
 from mailer import send_email
@@ -21,6 +21,7 @@ def main():
         config = yaml.safe_load(f)
     env = load_env()
     participants = load_participants("participants.csv")
+    history = load_history("history.json")
     numberMailMax = config.get("number_max_mail_send", 10)
     
     # Logging setup in test mode or not
@@ -30,7 +31,7 @@ def main():
         logging.getLogger().setLevel(logging.INFO)
 
     # Arrange Secret Santa pairs
-    pairs = make_pairs(participants, config.get("allow_self_assignment", False))
+    pairs = make_pairs(participants, config.get("allow_self_assignment", False), history)
     logging.info("🎲 Tirage terminé ! Paires générées :")
     for giver, recipient in pairs:
         logging.debug(f"  {giver['name']} → {recipient['name']}")

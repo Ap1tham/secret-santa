@@ -1,5 +1,6 @@
 import csv
 import os
+import json
 
 def load_env():
     env_path = ".env"
@@ -32,3 +33,7 @@ def save_preview(giver, recipient, html, text, out_dir="previews"):
         f.write(html)
     with open(os.path.join(out_dir, f"{safe_name}.txt"), "w", encoding="utf-8") as f:
         f.write(text)
+
+def load_history(path="history.json"):
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)

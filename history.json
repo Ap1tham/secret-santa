@@ -1,0 +1,14 @@
+{
+    "alice@mail.com": [
+        "bob@mail.com",
+        "claire@mail.com"
+    ],
+    "bob@mail.com": [
+        "alice@mail.com",
+        "alice@mail.com"
+    ],
+    "claire@mail.com": [
+        "bob@mail.com",
+        "bob@mail.com"
+    ]
+}
