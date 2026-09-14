@@ -1,9 +1,12 @@
+import os
 import yaml
 import logging
 from utils import load_env, load_participants, save_preview, load_history
 from arranger import make_pairs
 from renderer import render_email
 from mailer import send_email
+
+os.makedirs("logs", exist_ok=True)
 
 # --- Logging setup ---
 logging.basicConfig(
